@@ -1,6 +1,6 @@
 # Introduction
 
-The data set in our paper is available here.
+The data set in our paper **Characterizing Ethereum's Mining Power Decentralization at a Deeper Level** is available here.
 
 In Ethereum's Proof-of-Work(POW) consensus protocol, mining pools and solo miners receive <b>rewards(ethers)</b> from the system, and pools distribute the rewards to pool participants based on their relative mining power contribution. 
 

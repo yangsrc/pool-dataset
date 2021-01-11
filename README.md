@@ -1,12 +1,12 @@
 # Introduction
 
-The data set in our paper **Characterizing Ethereum's Mining Power Decentralization at a Deeper Level** is available here.
+The data set in our paper **Characterizing Ethereum's Mining Power Decentralization at a Deeper Level(Accepted by [INFOCOM 2021](https://infocom2021.ieee-infocom.org/accepted-paper-list-main-conference))** is available here.
 
 In Ethereum's Proof-of-Work(POW) consensus protocol, mining pools and solo miners receive <b>rewards(ethers)</b> from the system, and pools distribute the rewards to pool participants based on their relative mining power contribution. 
 
-We collect all reward payments to mining pools and participants in the first 8,300,000 blocks of Ethereum, from July 30, 2015 to August 6, 2019.  
+We collect all reward payments to mining pools and participants in the first  9,847,646 blocks of Ethereum, from July 30, 2015 through April 10, 2020.  
 
-The data set consists of four major parts: 1)all reward payments received by mining pools and solo miners from the protocol,  named as "<b>mining rewards</b>". 2)  all reward payments received by pool participants from mining pools, named as "<b>pool rewards</b>". 3) mining pools' accounts identified from [Etherscan](<https://etherscan.io/stat/miner?range=7&blocktype=blocks>). 4) pool participants' accounts verified through mining pool APIs.
+The data set consists of four major parts: 1)all reward payments received by mining pools and solo miners from the protocol,  named as <b>mining rewards</b>. 2)  all reward payments received by pool participants from mining pools, named as <b>pool rewards</b>. 3) mining pools' accounts identified from [Etherscan](<https://etherscan.io/stat/miner?range=7&blocktype=blocks>). 4) pool participants' accounts verified through mining pool APIs.
 
 Here are related files you can download freely:
 
@@ -21,7 +21,7 @@ It contains all accounts which receive mining rewards from the system, represent
 
 Each account has a unique <b>id</b>.
 
-Here are 5,184 distinct accounts, which receive block/uncle rewards.
+Here are 5,447 distinct accounts, which receive block/uncle rewards.
 
 --
 
@@ -39,7 +39,7 @@ Some pools have multiple accounts, like Ethpool.
 
 The same <b>id</b> here and in the *mining_reward_receiver_account.csv* represents the same account.
 
-Here are 50 distinct mining pools and 66 related accounts.
+Here are 47 distinct mining pools and 67 related accounts.
 
 --
 
@@ -60,7 +60,7 @@ The <b>block_number</b> and <b>timestamp</b> show which block and when the payme
 
 The <b>reward_type</b> consists of two kinds, including <b>MinerReward</b> and <b>UncleReward</b>.
 
-Here are 8,300,000 MinerReward payments and 912,188 UncleReward payments.
+Here are 9,847,646 MinerReward payments and 1,004,359 UncleReward payments.
 
 --
 
@@ -77,7 +77,7 @@ Each account has a unique <b>id</b>.
 
 The <b>pool</b> shows one or more pools whose APIs recognize the account as participant account.
 
-Here are 947,535 distinct participant accounts.
+Here are 980,168 distinct participant accounts.
 
 --
 
@@ -88,7 +88,7 @@ Here are 947,535 distinct participant accounts.
 | 4345    | 820941         | 132160792774361000  | 4130622      | 1502164246 |
 | 677     | 909983         | 1030838540000000000 | 6910503      | 1545158215 |
 
-It contains all pool reward payments from the identified 50 mining pools to the verified participants.
+It contains all pool reward payments from the identified 47 mining pools to the verified participants.
 
 The <b>pool_id</b> represents the pool account in the *recognized_pool_info.csv* .
 
@@ -98,7 +98,7 @@ The <b>value</b> shows how much reward is received by the participant from the p
 
 The <b>block_number</b> and <b>timestamp</b> show which block and when the payment is packaged in.
 
-Here are 54,523,273 pool reward payments.
+Here are 62,358,646 pool reward payments.
 
 
 

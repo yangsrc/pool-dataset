@@ -25,24 +25,6 @@ Here are 5,447 distinct accounts, which receive block/uncle rewards.
 
 --
 
-<b>[recognized_pool_info.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/mining_pool.csv?sp=r&st=2019-10-13T11:19:48Z&se=2020-10-29T19:19:48Z&spr=https&sv=2018-03-28&sig=oQ1IwjiML2NvAnIyvWaxUDum3SrZI796lsuOFyfVIgg%3D&sr=b)</b>
-
-|  id  |                  address                   |   name    |
-| :--: | :----------------------------------------: | :-------: |
-| 366  | 0x4bb96091ee9d802ed039c4d1a5f6216f90f81b01 |  Ethpool  |
-| 1197 | 0xe6a7a1d47ff21b6321162aea7c6cb457d5476bca |  Ethpool  |
-| 1509 | 0xea674fdde714fd979de3edf0f56aa9716b898ec8 | Ethermine |
-
-It contains accounts which we identify as mining pools from Etherscan.
-
-Some pools have multiple accounts, like Ethpool.
-
-The same <b>id</b> here and that in the *mining_reward_receiver_account.csv* represents the same account.
-
-Here are 47 distinct mining pools and 67 related accounts.
-
---
-
 <b>[mining_reward_payment.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/mining_reward_payment.csv?sp=r&st=2019-10-13T11:35:15Z&se=2020-10-29T19:35:15Z&spr=https&sv=2018-03-28&sig=HrIayuWJBA4%2F6MNgYHBSoP7fkYfu1zie5fdJZ8aIodQ%3D&sr=b)</b>
 
 |  id  |     value(Wei)      | block_number | timestamp  | reward_type |
@@ -61,6 +43,24 @@ The <b>block_number</b> and <b>timestamp</b> show which block and when the payme
 The <b>reward_type</b> consists of two kinds, including <b>MinerReward</b> and <b>UncleReward</b>.
 
 Here are 9,847,646 MinerReward payments and 1,004,359 UncleReward payments.
+
+--
+
+<b>[recognized_pool_info.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/mining_pool.csv?sp=r&st=2019-10-13T11:19:48Z&se=2020-10-29T19:19:48Z&spr=https&sv=2018-03-28&sig=oQ1IwjiML2NvAnIyvWaxUDum3SrZI796lsuOFyfVIgg%3D&sr=b)</b>
+
+|  id  |                  address                   |   name    |
+| :--: | :----------------------------------------: | :-------: |
+| 366  | 0x4bb96091ee9d802ed039c4d1a5f6216f90f81b01 |  Ethpool  |
+| 1197 | 0xe6a7a1d47ff21b6321162aea7c6cb457d5476bca |  Ethpool  |
+| 1509 | 0xea674fdde714fd979de3edf0f56aa9716b898ec8 | Ethermine |
+
+It contains accounts which we identify as mining pools from Etherscan.
+
+Some pools have multiple accounts, like Ethpool.
+
+The same <b>id</b> here and that in the *mining_reward_receiver_account.csv* represents the same account.
+
+Here are 47 distinct mining pools and 67 related accounts.
 
 --
 

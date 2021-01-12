@@ -37,7 +37,7 @@ It contains accounts which we identify as mining pools from Etherscan.
 
 Some pools have multiple accounts, like Ethpool.
 
-The same <b>id</b> here and in the *mining_reward_receiver_account.csv* represents the same account.
+The same <b>id</b> here and that in the *mining_reward_receiver_account.csv* represents the same account.
 
 Here are 47 distinct mining pools and 67 related accounts.
 

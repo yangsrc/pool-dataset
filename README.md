@@ -10,8 +10,7 @@ The data set consists of four major parts: 1)all reward payments received by min
 
 Here are related files you can download freely:
 
-<div id="1" > </div>
-<b>[mining_reward_receiver_account.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/mining_reward_receiver.csv?sp=r&st=2019-10-13T10:58:33Z&se=2020-10-29T18:58:33Z&spr=https&sv=2018-03-28&sig=7PwS9AjTLGdzmbupVsmrkgnDt7Ss0Cr60xI%2BDnfO7Y8%3D&sr=b)</b>
+<div id="1" ><b>[mining_reward_receiver_account.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/mining_reward_receiver.csv?sp=r&st=2019-10-13T10:58:33Z&se=2020-10-29T18:58:33Z&spr=https&sv=2018-03-28&sig=7PwS9AjTLGdzmbupVsmrkgnDt7Ss0Cr60xI%2BDnfO7Y8%3D&sr=b)</b></div>
 
 |  id  |                  address                   |
 | :--: | :----------------------------------------: |

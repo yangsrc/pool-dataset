@@ -10,6 +10,7 @@ The data set consists of four major parts: 1)all reward payments received by min
 
 Here are related files you can download freely:
 
+<div id="1" > </div>
 <b>[mining_reward_receiver_account.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/mining_reward_receiver.csv?sp=r&st=2019-10-13T10:58:33Z&se=2020-10-29T18:58:33Z&spr=https&sv=2018-03-28&sig=7PwS9AjTLGdzmbupVsmrkgnDt7Ss0Cr60xI%2BDnfO7Y8%3D&sr=b)</b>
 
 |  id  |                  address                   |
@@ -37,7 +38,7 @@ It contains accounts which we identify as mining pools from Etherscan.
 
 Some pools have multiple accounts, like Ethpool.
 
-The same <b>id</b> here and that in the *mining_reward_receiver_account.csv* represents the same account.
+The same <b>id</b> here and that in the *[mining_reward_receiver_account.csv](#1)* represents the same account.
 
 Here are 47 distinct mining pools and 67 related accounts.
 

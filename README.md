@@ -88,13 +88,13 @@ The <b>BlockNumber</b> and <b>Timestamp</b> show in which block and when the pay
 Here are **62,358,646** pool reward payments.
 
 
-#Citation
+# Citation
 IF YOU USE THIS DATA SET IN ANY PUBLISHED RESEARCH, PLEASE KINDLY CITE THE FOLLOWING PAPER:
 
 Liyi Zeng, Yang Chen, Shuo Chen, Xian Zhang, Zhongxin Guo, Wei Xu, Thomas Moscibroda, "Characterizing Ethereum’s Mining Power
 Decentralization at a Deeper Level", IEEE INFOCOM 2021.
 
-#Contact
+# Contacts
 Email: zengly17@mails.tsinghua.edu.cn, yachen@microsoft.com.
 
 

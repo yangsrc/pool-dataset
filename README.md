@@ -10,7 +10,7 @@ The data set consists of four major parts: 1)all reward payments received by min
 
 Here are related files you can download freely:
 
-<b>[mining_reward_payment.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/mining_reward_payment.csv?sp=r&st=2019-10-13T11:35:15Z&se=2020-10-29T19:35:15Z&spr=https&sv=2018-03-28&sig=HrIayuWJBA4%2F6MNgYHBSoP7fkYfu1zie5fdJZ8aIodQ%3D&sr=b)</b>
+<b>[mining_reward_payment.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/mining_rewards.csv?sp=r&st=2021-01-13T10:54:22Z&se=2023-12-31T18:54:22Z&spr=https&sv=2019-12-12&sr=b&sig=rHWVWc62r5SdZzcrsvl95DwbDhbfp8w2J7GQzfzHSy0%3D)</b>
 
 |                  Address                   |     Value(Wei)      | BlockNumber | Timestamp  | RewardType  |
 | :----------------------------------------: | :-----------------: | :---------: | :--------: | :---------: |
@@ -68,7 +68,7 @@ Here are **980,168** distinct participant accounts.
 
 --
 
-<b>[pool_reward_payment.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/pool_reward_payment.csv?sp=r&st=2019-10-15T08:05:25Z&se=2020-10-29T16:05:25Z&spr=https&sv=2018-03-28&sig=ih3E2aeItJ%2BSq29D2n2L2H8G%2FeAtar4sV%2BPtFTwbUa0%3D&sr=b)</b>
+<b>[pool_reward_payment.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/pool_reward_payment.csv?sp=r&st=2021-01-13T10:55:33Z&se=2023-12-31T18:55:33Z&spr=https&sv=2019-12-12&sr=b&sig=1nMZuHd6rH60emp%2FumuOeOrhyl1GXXEWQfRWRwRDM6M%3D)</b>
 
 | PoolID | ParticipantID |     Value(Wei)     | BlockNumber | Timestamp  |
 | :----: | :-----------: | :----------------: | :---------: | :--------: |
@@ -88,6 +88,7 @@ The <b>BlockNumber</b> and <b>Timestamp</b> show in which block and when the pay
 Here are **62,358,646** pool reward payments.
 
 
+
 # Citation
 IF YOU USE THIS DATA SET IN ANY PUBLISHED RESEARCH, PLEASE KINDLY CITE THE FOLLOWING PAPER:
 
@@ -96,7 +97,6 @@ Decentralization at a Deeper Level", IEEE INFOCOM 2021.
 
 # Contacts
 Email: zengly17@mails.tsinghua.edu.cn, yachen@microsoft.com.
-
 
 
 

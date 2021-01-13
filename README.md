@@ -1,107 +1,101 @@
 # Introduction
 
-The data set in our paper is available here.
+The data set in our paper **Characterizing Ethereum's Mining Power Decentralization at a Deeper Level(Accepted by [INFOCOM 2021](https://infocom2021.ieee-infocom.org/accepted-paper-list-main-conference))** is available here.
 
 In Ethereum's Proof-of-Work(POW) consensus protocol, mining pools and solo miners receive <b>rewards(ethers)</b> from the system, and pools distribute the rewards to pool participants based on their relative mining power contribution. 
 
-We collect all reward payments to mining pools and participants in the first 8,300,000 blocks of Ethereum, from July 30, 2015 to August 6, 2019.  
+We collect all reward payments to mining pools and participants in the first  9,847,646 blocks of Ethereum, from July 30, 2015 through April 10, 2020.  
 
-The data set consists of four major parts: 1)all reward payments received by mining pools and solo miners from the protocol,  named as "<b>mining rewards</b>". 2)  all reward payments received by pool participants from mining pools, named as "<b>pool rewards</b>". 3) mining pools' accounts identified from [Etherscan](<https://etherscan.io/stat/miner?range=7&blocktype=blocks>). 4) pool participants' accounts verified through mining pool APIs.
+The data set consists of four major parts: 1)all reward payments received by mining pools and solo miners from the protocol,  named as <b>mining rewards</b>. 2)  all reward payments received by pool participants from mining pools, named as <b>pool rewards</b>. 3) mining pools' accounts identified from [Etherscan](<https://etherscan.io/stat/miner?range=7&blocktype=blocks>). 4) pool participants' accounts verified through mining pool APIs.
 
 Here are related files you can download freely:
 
-<b>[mining_reward_receiver_account.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/mining_reward_receiver.csv?sp=r&st=2019-10-13T10:58:33Z&se=2020-10-29T18:58:33Z&spr=https&sv=2018-03-28&sig=7PwS9AjTLGdzmbupVsmrkgnDt7Ss0Cr60xI%2BDnfO7Y8%3D&sr=b)</b>
+<b>[mining_reward_payment.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/mining_reward_payment.csv?sp=r&st=2019-10-13T11:35:15Z&se=2020-10-29T19:35:15Z&spr=https&sv=2018-03-28&sig=HrIayuWJBA4%2F6MNgYHBSoP7fkYfu1zie5fdJZ8aIodQ%3D&sr=b)</b>
 
-|  id  |                  address                   |
-| :--: | :----------------------------------------: |
-|  0   | 0x6f8fc6d5d9df81850261f3859cf8c52d69bc6dca |
-|  1   | 0xe160bb81383a5c4a562088d90f49e0f4b4bc6d1e |
+|                  Address                   |     Value(Wei)      | BlockNumber | Timestamp  | RewardType  |
+| :----------------------------------------: | :-----------------: | :---------: | :--------: | :---------: |
+| 0x829bd824b016326a401d083b33d092293333a830 | 2000000000000000000 |   9623276   | 1583571588 | MinerReward |
+| 0x52bc44d5378309ee2abf1539bf71de1b7d7be3b5 | 1750000000000000000 |   9623277   | 1583571622 | UncleReward |
 
-It contains all accounts which receive mining rewards from the system, representing mining pools or solo miners.
+It contains all mining reward payments received by mining pools and solo miners from the system.
 
-Each account has a unique <b>id</b>.
+The <b>Address</b> represents the account which belongs to a mining pool or a solo miner.
 
-Here are 5,184 distinct accounts, which receive block/uncle rewards.
+The <b>Value</b> shows how much reward the account receives(1 ETH = 10^18 Wei ).
+
+The <b>BlockNumber</b> and <b>Timestamp</b> show in which block and when the payment is packaged.
+
+The <b>RewardType</b> consists of two kinds, including <b>MinerReward</b> and <b>UncleReward</b>.
+
+Here are **5,447** distinct accounts.
+
+Here are **9,847,646** MinerReward payments and **1,004,359** UncleReward payments.
 
 --
 
-<b>[recognized_pool_info.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/mining_pool.csv?sp=r&st=2019-10-13T11:19:48Z&se=2020-10-29T19:19:48Z&spr=https&sv=2018-03-28&sig=oQ1IwjiML2NvAnIyvWaxUDum3SrZI796lsuOFyfVIgg%3D&sr=b)</b>
+<b>[recognized_pool_info.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/recognized_pool_info.csv?sp=r&st=2021-01-13T06:52:16Z&se=2024-01-01T14:52:16Z&spr=https&sv=2019-12-12&sr=b&sig=de%2Fg5MxwyIg61qPutoJZpJHkoG4miNVgm5kikduDxpg%3D)</b>
 
-|  id  |                  address                   |   name    |
+|  ID  |                  Address                   | PoolName  |
 | :--: | :----------------------------------------: | :-------: |
-| 366  | 0x4bb96091ee9d802ed039c4d1a5f6216f90f81b01 |  Ethpool  |
-| 1197 | 0xe6a7a1d47ff21b6321162aea7c6cb457d5476bca |  Ethpool  |
-| 1509 | 0xea674fdde714fd979de3edf0f56aa9716b898ec8 | Ethermine |
+|  22  | 0x4bb96091ee9d802ed039c4d1a5f6216f90f81b01 |  EthPool  |
+|  23  | 0xe6a7a1d47ff21b6321162aea7c6cb457d5476bca |  EthPool  |
+|  0   | 0xea674fdde714fd979de3edf0f56aa9716b898ec8 | Ethermine |
 
 It contains accounts which we identify as mining pools from Etherscan.
 
 Some pools have multiple accounts, like Ethpool.
 
-The same <b>id</b> here and in the *mining_reward_receiver_account.csv* represents the same account.
+Each account has a unique **ID**(0~66).
 
-Here are 50 distinct mining pools and 66 related accounts.
-
---
-
-<b>[mining_reward_payment.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/mining_reward_payment.csv?sp=r&st=2019-10-13T11:35:15Z&se=2020-10-29T19:35:15Z&spr=https&sv=2018-03-28&sig=HrIayuWJBA4%2F6MNgYHBSoP7fkYfu1zie5fdJZ8aIodQ%3D&sr=b)</b>
-
-|  id  |     value(Wei)      | block_number | timestamp  | reward_type |
-| :--: | :-----------------: | :----------: | :--------: | :---------: |
-| 1524 | 5000000000000000000 |    60001     | 1439147254 | MinerReward |
-| 4168 | 3750000000000000000 |    60003     | 1439147361 | UncleReward |
-
-It contains all mining reward payments.
-
-The <b>id</b> represents the account in the *mining_reward_receiver_account.csv*.
-
-The <b>value</b> shows how much reward the account receives(1 ETH = 10^18 Wei ).
-
-The <b>block_number</b> and <b>timestamp</b> show which block and when the payment is packaged in.
-
-The <b>reward_type</b> consists of two kinds, including <b>MinerReward</b> and <b>UncleReward</b>.
-
-Here are 8,300,000 MinerReward payments and 912,188 UncleReward payments.
+Here are **47** distinct mining pools and **67** related accounts.
 
 --
 
-<b>[recognized_participant_info.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/identified_participant.csv?sp=r&st=2019-10-13T11:36:17Z&se=2020-10-29T19:36:17Z&spr=https&sv=2018-03-28&sig=lkgA2rF1DrjRA86B4IXFDXOy2iY7SNfmUEdMZ4sAZtQ%3D&sr=b)</b>
+<b>[recognized_participant_info.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/recognized_participant_info.csv?sp=r&st=2021-01-13T08:38:17Z&se=2023-12-31T16:38:17Z&spr=https&sv=2019-12-12&sr=b&sig=F0ACAISkVYbcw1Uas%2Bz2iNGxkIvRxLqdXcStVc7Gatc%3D)</b>
 
-|  id  |                  address                   |       pool       |
-| :--: | :----------------------------------------: | :--------------: |
-|  0   | 0xa2adbcac67e3a0dbba49b0cd3dd216ee9702e64b |    Ethermine     |
-|  1   | 0x9d0b51b932d20787eaeea27ae251ff448a97f692 | SparkPool/F2Pool |
+|  ID   |                  Address                   |     PoolName     |
+| :---: | :----------------------------------------: | :--------------: |
+| 31746 | 0x1c139f20557a682a4b1baedc1850ded9af3d2463 |    Ethermine     |
+| 31750 | 0xd23d5580390f41a1a9cda331a64ca049e0c51c8e | EthPool/NanoPool |
 
 It contains all participant accounts verified through the mining pool APIs.
 
-Each account has a unique <b>id</b>.
+Each account has a unique <b>ID</b>(0~980167).
 
-The <b>pool</b> shows one or more pools whose APIs recognize the account as participant account.
+The <b>PoolName</b> shows by which pool APIs the participant account is recognized. Some participants are recognized by more than one pools.
 
-Here are 947,535 distinct participant accounts.
+Here are **980,168** distinct participant accounts.
 
 --
 
 <b>[pool_reward_payment.csv](https://miningpaper.blob.core.windows.net/data-sharing-2/pool_reward_payment.csv?sp=r&st=2019-10-15T08:05:25Z&se=2020-10-29T16:05:25Z&spr=https&sv=2018-03-28&sig=ih3E2aeItJ%2BSq29D2n2L2H8G%2FeAtar4sV%2BPtFTwbUa0%3D&sr=b)</b>
 
-| pool_id | participant_id | value(Wei)          | block_number | timestamp  |
-| ------- | -------------- | ------------------- | ------------ | ---------- |
-| 4345    | 820941         | 132160792774361000  | 4130622      | 1502164246 |
-| 677     | 909983         | 1030838540000000000 | 6910503      | 1545158215 |
+| PoolID | ParticipantID |     Value(Wei)     | BlockNumber | Timestamp  |
+| :----: | :-----------: | :----------------: | :---------: | :--------: |
+|   4    |    170043     | 118093644687491078 |   6103615   | 1533631607 |
+|   29   |    594033     | 143869621000000000 |   6042297   | 1532738690 |
 
-It contains all pool reward payments from the identified 50 mining pools to the verified participants.
+It contains all pool reward payments from the identified 47 mining pools to the verified participants.
 
-The <b>pool_id</b> represents the pool account in the *recognized_pool_info.csv* .
+The <b>PoolID</b> represents the pool account in the *recognized_pool_info.csv* .
 
-The <b>participant_id</b> represents the participant account in the *recognized_participant_info.csv*.
+The <b>ParticipantID</b> represents the participant account in the *recognized_participant_info.csv*.
 
-The <b>value</b> shows how much reward is received by the participant from the pool.
+The <b>Value</b> shows how much reward is received by the participant from the pool.
 
-The <b>block_number</b> and <b>timestamp</b> show which block and when the payment is packaged in.
+The <b>BlockNumber</b> and <b>Timestamp</b> show in which block and when the payment is packaged.
 
-Here are 54,523,273 pool reward payments.
+Here are **62,358,646** pool reward payments.
 
 
+# Citation
+IF YOU USE THIS DATA SET IN ANY PUBLISHED RESEARCH, PLEASE KINDLY CITE THE FOLLOWING PAPER:
 
+Liyi Zeng, Yang Chen, Shuo Chen, Xian Zhang, Zhongxin Guo, Wei Xu, Thomas Moscibroda, "Characterizing Ethereum’s Mining Power
+Decentralization at a Deeper Level", IEEE INFOCOM 2021.
+
+# Contacts
+Email: zengly17@mails.tsinghua.edu.cn, yachen@microsoft.com.
 
 
 
